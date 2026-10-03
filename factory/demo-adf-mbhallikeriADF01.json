@@ -1,0 +1,21 @@
+{
+	"name": "demo-adf-mbhallikeriADF01",
+	"properties": {
+		"globalParameters": {
+			"email_recepient": {
+				"type": "string",
+				"value": "mbhallikeriadf01@gmail.com"
+			}
+		},
+		"trustModeClaimForMi": {
+			"value": "Disabled",
+			"editable": true
+		}
+	},
+	"location": "westus2",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "90761fc4-635e-4c60-9ea4-828c89029b6a",
+		"tenantId": "afef3d94-97de-4129-a279-244313fd3840"
+	}
+}

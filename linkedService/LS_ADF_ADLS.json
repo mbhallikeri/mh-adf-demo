@@ -1,0 +1,12 @@
+{
+	"name": "LS_ADF_ADLS",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "Linked service connection for ADLS",
+		"annotations": [],
+		"type": "AzureBlobFS",
+		"typeProperties": {
+			"url": "https://mbhallikeriadf01sa.dfs.core.windows.net/"
+		}
+	}
+}

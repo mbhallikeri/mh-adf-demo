@@ -1,0 +1,40 @@
+{
+	"name": "PL_ADF_DEMO",
+	"properties": {
+		"activities": [
+			{
+				"name": "Read_Customer_Table",
+				"description": "Read customer data from a table from SQL DB",
+				"type": "Lookup",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"source": {
+						"type": "AzureSqlSource",
+						"queryTimeout": "02:00:00",
+						"partitionOption": "None"
+					},
+					"dataset": {
+						"referenceName": "DS_SQL_SRVR",
+						"type": "DatasetReference",
+						"parameters": {
+							"schema": "dbo",
+							"table_name": "cust"
+						}
+					},
+					"firstRowOnly": false
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2026-09-30T03:13:29Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
