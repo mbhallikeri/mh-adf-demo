@@ -58,6 +58,7 @@
 			},
 			{
 				"name": "Get List of Files",
+				"description": "This will get the list of files.",
 				"type": "GetMetadata",
 				"dependsOn": [],
 				"policy": {
